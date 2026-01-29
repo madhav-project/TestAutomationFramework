@@ -1,0 +1,19 @@
+{
+  "environments": {
+    "DEV": {
+      "url": "https://automationpractice.techwithjatin.com/",
+	  "reports":"extents",
+	  "MAX_NUMBER_OF_ATTEMPTS":3
+    },
+    "QA": {
+      "url": "https://automationpractice.techwithjatin.com/",
+	  "reports":"extents",
+	  "MAX_NUMBER_OF_ATTEMPTS":3
+    },
+    "UAT": {
+      "url": "https://automationpractice.techwithjatin.com/",
+	  "reports":"allure",
+	  "MAX_NUMBER_OF_ATTEMPTS":3
+    }
+  }
+}
