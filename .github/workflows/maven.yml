@@ -46,6 +46,7 @@ jobs:
         path: report.html
 
     - name: On Test Execution Completed
+      if: always()
       run: echo "Test Execution is completed."
 
     - name: Copy reports to gh-folder 
@@ -53,7 +54,7 @@ jobs:
       
       run:
         mkdir -p public/extent-reports
-        cp -R report.html public/extent-reports/
+        cp -R report.html  public/extent-reports/
         cp -R screenshots/ public/extent-reports/screenshots/
         ls -l 
 
